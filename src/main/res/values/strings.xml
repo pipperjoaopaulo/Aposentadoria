@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Aposentadoria</string>
-    <string name="coloque_seu_genero">Coloque seu Genero</string>
+    <string name="Nome">João Paulo Pipper Da Silva</string>
+    <string name="selecionar">Calcular</string>
 </resources>

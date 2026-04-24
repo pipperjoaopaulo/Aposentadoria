@@ -1,33 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop ="20dp"
-    android:padding="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="2sp"
+
+    android:padding="9dp"
+
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="181dp"
+        android:layout_height="64dp"
+        android:background="@color/black"
         android:backgroundTint="@color/black"
-        android:padding="8dp"
-        android:text="@string/coloque_seu_genero"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fontFamily="@font/butler"
+        android:padding="8sp"
+        android:text="@string/Nome"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
 
     <Spinner
-        android:layout_width="150dp"
-        android:layout_height="48dp"
-        android:padding="1sp"
-        />
+        android:id="@+id/spinner"
+        android:layout_width="182dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/butler"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/edittexto"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:drawableRight="@drawable/baseline_calculate_24"
+        android:fontFamily="@font/butler"
+        android:padding="16dp"
+        android:text="@string/selecionar"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
 
 </LinearLayout>
