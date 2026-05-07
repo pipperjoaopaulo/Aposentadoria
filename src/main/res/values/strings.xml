@@ -2,4 +2,6 @@
     <string name="app_name">Aposentadoria</string>
     <string name="Nome">João Paulo Pipper Da Silva</string>
     <string name="selecionar">Calcular</string>
+    <string name="Digiteidade">Digite A Sua Idade</string>
+
 </resources>

@@ -3,20 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
     android:layout_marginTop="2sp"
-
-    android:padding="9dp"
+    android:padding="50dp"
 
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/texto"
-        android:layout_width="181dp"
-        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/butler"
@@ -27,34 +26,58 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="182dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/butler"
         android:padding="8dp" />
 
     <EditText
         android:id="@+id/edittexto"
-        android:layout_width="183dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:backgroundTint="@color/black"
         android:digits="0123456789"
         android:inputType="number"
         android:maxLength="3"
+        android:hint="@string/Digiteidade"
         android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:padding="8dp"/>
 
     <Button
         android:id="@+id/botao"
-        android:layout_width="184dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
         android:backgroundTint="@color/black"
-        android:drawableRight="@drawable/baseline_calculate_24"
+        android:drawableEnd="@drawable/baseline_calculate_24"
         android:fontFamily="@font/butler"
         android:padding="16dp"
         android:text="@string/selecionar"
         android:textColor="@color/white"
         android:textSize="24sp" />
+    <TextView
+        android:id="@+id/resposta"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/butler"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+    />
+    <TextView
+        android:id="@+id/muitovelho"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:fontFamily="@font/butler"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        />
 
 
 </LinearLayout>
